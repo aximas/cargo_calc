@@ -9,46 +9,51 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,600&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <h1 class="title">
-            Калькулятор перевозок
-        </h1>
-        <p class="dimension-info">
-            Все единицы измерения указываете в метрах
-        </p>
-        <div class="calc-wrapper">
-            <div class="calc-input">
-                <label for="width">Ширина</label>
-                <input id="width" name="width" type="number" class="width">
-            </div>
-            <div class="calc-input">
-                <label for="height">Высота</label>
-                <input id="height" name="height" type="number" class="height">
-            </div>
-            <div class="calc-input">
-                <label for="length">Длина</label>
-                <input id="length" name="width" type="number" class="length">
-            </div>
+<div class="wrapper">
+    <h1 class="title">
+        Калькулятор грузо перевозок
+    </h1>
+    <p class="dimension-info">
+        Все единицы измерения указываете в метрах
+    </p>
+    <div class="lottie-animation">
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_Mjmr5Q.json" background="transparent"  speed="0.6" loop autoplay></lottie-player>
+    </div>
+    <div class="calc-wrapper">
+        <div class="calc-input">
+            <label for="width">Ширина</label>
+            <input id="width" name="width" type="number" class="width">
         </div>
-        <div class="result-wrapper">
-            <div class="result-block">
-                <h3 class="capacity-subtitle">
-                    Обьём вашего груза
-                </h3>
-                <div class="capacity-result"></div>
-            </div>
-            <div class="result-block">
-                <h3 class="capacity-weight-subtitle">
-                    Обьёмный вес вашего груза
-                </h3>
-                <div class="capacity-weight-result"></div>
-            </div>
+        <div class="calc-input">
+            <label for="height">Высота</label>
+            <input id="height" name="height" type="number" class="height">
+        </div>
+        <div class="calc-input">
+            <label for="length">Длина</label>
+            <input id="length" name="width" type="number" class="length">
         </div>
     </div>
+    <div class="result-wrapper">
+        <div class="result-block">
+            <h3 class="capacity-subtitle">
+                Обьём вашего груза:
+            </h3>
+            <div class="capacity-result">___</div>
+        </div>
+        <div class="result-block">
+            <h3 class="capacity-weight-subtitle">
+                Обьёмный вес вашего груза:
+            </h3>
+            <div class="capacity-weight-result">___</div>
+        </div>
+    </div>
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>

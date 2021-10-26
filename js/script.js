@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let width,
         height,
         length,
-        capacity;
+        capacity,
+        capacityWeight;
     const resultCapacity = document.querySelector('.capacity-result'),
         resultCapacityWeight = document.querySelector('.capacity-weight-result');
 
@@ -11,9 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function calcTotal() {
         if (width && height && length) {
             capacity = width * height * length;
-            resultCapacity.textContent = capacity;
+            capacityWeight = capacity * 167;
+            resultCapacity.textContent = capacity + ' m3';
+            resultCapacityWeight.textContent = capacityWeight + ' kg';
         } else {
-            resultCapacity.textContent = '';
+            resultCapacity.textContent = '___';
+            resultCapacityWeight.textContent = '___';
         }
     }
 
