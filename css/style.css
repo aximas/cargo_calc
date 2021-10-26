@@ -1,0 +1,73 @@
+/* reset all styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* remove arrows of input number   */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+html {
+    font-family: 'Bitter', serif;
+}
+
+.wrapper {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 32px 0;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.dimension-info {
+    margin-top: 12px;
+}
+
+.calc-wrapper {
+    width: 792px;
+    margin: 48px auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.calc-input {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.calc-input label {
+    font-size: 32px;
+}
+
+.calc-input input {
+    width: 80px;
+    height: 32px;
+    padding: 2px 8px;
+    margin-left: 6px;
+    font-size: 28px;
+}
+
+.result-wrapper {
+    margin-top: 48px;
+}
+
+.result-block {
+    margin: 16px 0;
+}
+
+.result-block div {
+    margin: 8px auto;
+}
