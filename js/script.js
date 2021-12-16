@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function calcTotal() {
         if (width && height && length) {
-            capacity = width * height * length;
-            capacityWeight = capacity * 167;
+            capacity = (width * height * length).toFixed(2);
+            capacityWeight = (capacity * 167).toFixed(2);
             resultCapacity.textContent = capacity + ' m3';
             resultCapacityWeight.textContent = capacityWeight + ' kg';
         } else {

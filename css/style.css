@@ -29,7 +29,8 @@ h1 {
 }
 
 .dimension-info {
-    margin-top: 12px;
+    text-decoration: underline;
+    color: hsl(349, 80%, 45%);
 }
 
 .calc-wrapper {
